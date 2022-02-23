@@ -1,0 +1,21 @@
+<br><br>
+   
+<h1> CEP Founded</h1>  
+<div class="columns" style="margin-top:80px" >
+        <div class="column">              
+        </div>
+                <div class="column" id="central_column">
+                        
+                        <div class="box" style="margin-top:auto; margin-left:auto;">
+                              <strong>CEP:</strong> <%= @search['code'] %><br>
+                              <strong>Estado:</strong><%= @search['state'] %><br>
+                              <strong>Cidade:</strong><%= @search['city'] %><br>
+                              <strong>Bairro:</strong> <%= @search['district'] %><br>
+                              <strong>Rua:</strong> <%= @search['address'] %><br> 
+                              
+                                <%= link_to "Back", root_path, :class=>"button is-black is-outlined"  %>  
+                        </div>
+                </div>  
+        <div class="column">        
+        </div>
+</div>

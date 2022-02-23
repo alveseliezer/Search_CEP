@@ -1,0 +1,17 @@
+<br><br>  
+<h1>Busca CEP</h1>  
+<div class="columns" style="margin-top:60px" >
+        <div class="column">              
+        </div>
+                <div class="column" id="central_column">
+                        
+                        <div class="box" style="margin-top:auto; margin-left:auto;">
+                                <%= form_with url: home_show_url, method: :get do |f| %>
+                                        <%= f.text_field :code, placeholder: '00000-000', :class=>"input is-success"%><br><br>
+                                        <%= f.submit 'Search', id: :code, :class=>"button is-success is-outlined"%>       
+                                <% end %> 
+                        </div>
+                </div>  
+        <div class="column">        
+        </div>
+</div>
